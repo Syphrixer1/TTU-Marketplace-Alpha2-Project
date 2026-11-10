@@ -6,7 +6,7 @@ This branch contains my Create Listing page and individual progress report. The 
 
 ## Files
 
-- `index.html` - Create Listing form
+- `create-listing.html` - Create Listing form
 - `css/styles.css` - page styling
 - `images/` - the icons and sample listing pictures used on my page
 - `reports/Alex_Long_Individual_Report.docx` - individual report with screenshot
@@ -15,4 +15,4 @@ This branch contains my Create Listing page and individual progress report. The 
 
 The form has labeled fields for the title, description, condition, price, and pictures. Required fields are checked before Create shows a preview message. Choosing pictures shows how many files were selected. Cancel clears the form. Listings are not saved or posted yet.
 
-Open `index.html` in a browser or use Live Server in VS Code. This branch contains only my page; the other navigation buttons are placeholders for the group project.
+Open `create-listing.html` in a browser or use Live Server in VS Code. This branch contains only my page; the other navigation buttons are placeholders for the group project.
