@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Alex Long — Create Listing page -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create Listing | TTU Marketplace</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header"><div class="current-page"><span>Create<br>Listing</span></div><a class="brand" href="index.html">TTU Marketplace</a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="#other-listings">Buying</a><a href="#listing-form" aria-current="page">Selling</a><button type="button">Account</button><button type="button">Cart</button></nav></header>
+  <main>
+    <section aria-labelledby="create-listing-heading">
+      <h1 id="create-listing-heading" class="visually-hidden">Create Listing</h1>
+    <form id="listing-form" class="listing-form">
+      <div class="field title-field"><label for="title">Title</label><input id="title" name="title" placeholder="Enter title here." required></div>
+      <div class="field description-field"><label for="description">Description</label><textarea id="description" name="description" placeholder="Enter description here." required></textarea></div>
+      <fieldset class="condition-field"><legend>Condition</legend><div class="conditions">
+        <label><input type="radio" name="condition" value="Damaged" required><span>Damaged</span></label>
+        <label><input type="radio" name="condition" value="Fair"><span>Fair</span></label>
+        <label><input type="radio" name="condition" value="Good"><span>Good</span></label>
+        <label><input type="radio" name="condition" value="Perfect"><span>Perfect</span></label>
+      </div></fieldset>
+      <div class="field price-field"><label for="price">Price</label><input id="price" name="price" type="number" min="0" step="0.01" inputmode="decimal" placeholder="$00.00" required></div>
+      <div class="field upload-field"><label for="images">Upload Images</label><div class="upload-area"><img class="upload-icon" src="images/upload.svg" alt=""><label class="browse" for="images">Browse Files</label><input id="images" type="file" accept="image/*" multiple><span id="file-status" aria-live="polite"></span></div></div>
+      <div class="actions"><button type="submit">Create</button><button type="reset">Cancel</button></div>
+      <p id="form-status" role="status"></p>
+    </form>
+    </section>
+    <section id="other-listings" class="other-listings" aria-labelledby="listings-heading">
+      <h2 id="listings-heading">Other Listings</h2>
+      <div class="cards">
+        <article class="card"><img src="images/book.svg" alt="Math textbook"><div class="card-copy"><h2>Math Textbook $60</h2><p>Textbook that has Calculus 1,<br>2, and 3.</p></div><span class="badge">Good</span></article>
+        <article class="card"><img src="images/headphones.svg" alt="Wireless headphones"><div class="card-copy"><h2>Wireless headphones $20</h2><p>3-4 years old but<br>still works.</p></div><span class="badge">Fair</span></article>
+        <article class="card"><img src="images/scooter.svg" alt="Electric scooter"><div class="card-copy"><h2>Electric Scooter $50</h2><p>3-4 years old but<br>still works, some<br>minor scratches.</p></div><span class="badge">Good</span></article>
+        <article class="card"><img src="images/backpack.svg" alt="Northface backpack"><div class="card-copy"><h2>Northface Backpack $50</h2><p>Barely used about 3<br>months old.</p></div><span class="badge">Perfect</span></article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><a href="index.html">TTU Marketplace</a><p>A marketplace for the Texas Tech community.</p></footer>
+  <script>
+    const form = document.querySelector('form');
+    const images = document.querySelector('#images');
+    images.addEventListener('change', () => {
+      document.querySelector('#file-status').textContent = images.files.length ? `${images.files.length} image(s) selected` : '';
+    });
+    form.addEventListener('reset', () => {
+      document.querySelector('#file-status').textContent = '';
+      document.querySelector('#form-status').textContent = '';
+    });
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      document.querySelector('#form-status').textContent = 'Listing preview complete. Publishing requires a connected marketplace service.';
+    });
+  </script>
+</body>
+</html>
