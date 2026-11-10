@@ -40,9 +40,3 @@ The team proposal and shared project information belong on `main`. Each person w
 Each page will have its own HTML file with the author's name in a comment at the top. Shared styling goes in `css/styles.css`, and images and icons go in `images/`. The home page uses `index.html`; the other planned filenames are listed in the proposal above. These filenames describe the intended group structure, not files that are all present on `main` yet.
 
 Alex's current work is on `Alex's-Page`. His Create Listing file is currently named `index.html`; renaming it to `create-listing.html` is still pending. The four teammate invitations have been sent. Each teammate still needs to accept their invitation and contribute from their own branch.
-
-## Milestone 1 submission
-
-The group submission needs this repository link, a combined progress report with each person's named section and current page screenshot, and a meeting log with at least one real meeting. Each report section should be 150–200 words and reference the person's actual files and code. One team member submits the completed group document through Canvas.
-
-The meeting log still needs the date, meeting format, attendees, discussion, decisions, and action items. The combined report and meeting log are not complete yet.
