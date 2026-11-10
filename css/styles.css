@@ -40,7 +40,9 @@ legend { padding: 4px 14px; margin-bottom: 6px; line-height: 32px; }
 input[type=file] { position: absolute; width: 1px; height: 1px; opacity: 0; }
 .upload-area:focus-within { outline: 2px solid #4a90e2; }
 #file-status { position: absolute; left: 12px; bottom: 10px; font-size: 16px; }
-.actions { display: flex; gap: 43px; margin-top: 11px; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 43px; margin-top: 11px; }
+.back-link { color: #000; font-size: 20px; text-decoration: underline; text-underline-offset: 4px; }
+.back-link:hover { color: #a00606; }
 .actions button { background: #d9d9d9; border: 0; font: inherit; font-size: 32px; width: 128px; height: 59px; cursor: pointer; }
 #form-status { font-size: 16px; margin: 8px 0 0; }
 #form-status:empty { display: none; }
