@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Enter shipping information and review your TTU Marketplace purchase.">
+  <title>Checkout | TTU Marketplace</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="checkout-body">
+  <a class="skip-link" href="#checkout-form">Skip to checkout form</a>
+
+  <header class="checkout-header">
+    <p class="checkout-tab" aria-hidden="true">Buying</p>
+    <a class="checkout-brand" href="index.html">TTU Marketplace</a>
+    <nav class="checkout-navigation" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html" aria-current="page">Buying</a>
+      <a href="create-listing.html">Selling</a>
+      <a href="sign-in.html">Account</a>
+      <a href="Cart-index.html">Cart</a>
+    </nav>
+  </header>
+
+  <main class="checkout-main">
+    <h1 class="visually-hidden">Checkout</h1>
+    <section class="checkout-tools" aria-label="Marketplace tools">
+      <a class="checkout-create-listing" href="create-listing.html">Create Listing</a>
+      <form class="checkout-search" action="index.html" method="get" role="search" aria-label="Search marketplace">
+        <label class="visually-hidden" for="checkout-search-input">Search marketplace</label>
+        <input id="checkout-search-input" name="q" type="search" placeholder="Search">
+        <button type="submit" aria-label="Submit search"></button>
+      </form>
+    </section>
+
+    <section class="checkout-layout" aria-label="Checkout">
+      <form id="checkout-form" class="checkout-form" action="#" method="post">
+        <fieldset class="shipping-section">
+          <legend>Shipping information:</legend>
+          <section class="shipping-fields" aria-label="Shipping address">
+            <label>
+              First Name
+              <input name="firstName" type="text" autocomplete="given-name" placeholder="Enter First Name" required>
+            </label>
+            <label>
+              Last Name
+              <input name="lastName" type="text" autocomplete="family-name" placeholder="Enter Last Name" required>
+            </label>
+            <label>
+              Address
+              <input name="address" type="text" autocomplete="street-address" placeholder="Enter address" required>
+            </label>
+            <label>
+              City
+              <input name="city" type="text" autocomplete="address-level2" placeholder="Enter City" required>
+            </label>
+            <label>
+              State
+              <input name="state" type="text" autocomplete="address-level1" placeholder="Enter state" required>
+            </label>
+            <label>
+              Zip Code
+              <input name="zipCode" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="Enter Zip Code" required>
+            </label>
+          </section>
+        </fieldset>
+
+        <fieldset class="payment-section">
+          <legend>Payment Method:</legend>
+          <section class="payment-options" aria-label="Choose a payment method">
+            <label class="payment-option">
+              <input name="paymentMethod" type="radio" value="card" checked required>
+              <img src="images/credit-card.svg" alt="">
+              <strong>Credit / Debit Card</strong>
+            </label>
+            <label class="payment-option">
+              <input name="paymentMethod" type="radio" value="paypal">
+              <img src="images/paypal.svg" alt="">
+              <strong>Paypal</strong>
+            </label>
+            <label class="payment-option">
+              <input name="paymentMethod" type="radio" value="apple-pay">
+              <img src="images/apple-pay.svg" alt="">
+              <strong>Apple Pay</strong>
+            </label>
+          </section>
+
+          <fieldset class="card-details">
+            <legend class="visually-hidden">Card details</legend>
+            <label>
+              Card Number
+              <input type="text" inputmode="numeric" autocomplete="cc-number" placeholder="1234 5678 9012 3456">
+            </label>
+            <label>
+              Expiration Date
+              <input type="text" inputmode="numeric" autocomplete="cc-exp" placeholder="MM/YY">
+            </label>
+            <label>
+              CVV
+              <input type="text" inputmode="numeric" autocomplete="cc-csc" placeholder="Enter CVV">
+            </label>
+          </fieldset>
+        </fieldset>
+      </form>
+
+      <aside class="purchase-summary" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Purchase Summary</h2>
+        <section class="summary-panel" aria-label="Order details">
+          <article class="summary-item">
+            <img src="images/math-textbook.svg" alt="Illustration of a math textbook">
+            <section>
+              <h2><a href="Cart-index.html">Math Textbook $60</a></h2>
+              <p>Textbook that has Calculus 1, 2, and 3.</p>
+            </section>
+          </article>
+          <p class="summary-placeholder" aria-hidden="true"></p>
+          <p class="summary-placeholder" aria-hidden="true"></p>
+          <p class="summary-placeholder" aria-hidden="true"></p>
+          <dl class="order-totals">
+            <dt>Subtotal</dt>
+            <dd>$60.00</dd>
+            <dt>Shipping</dt>
+            <dd>$0.00</dd>
+            <dt>Estimated Tax</dt>
+            <dd>$4.95</dd>
+          </dl>
+        </section>
+
+        <nav class="purchase-actions" aria-label="Purchase actions">
+          <a class="cancel-purchase" href="Cart-index.html">Cancel Purchase</a>
+          <button class="submit-purchase" type="submit" form="checkout-form">Submit Purchase</button>
+        </nav>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="checkout-footer">
+    <p>TTU Marketplace | ENGR 1340 Project 2</p>
+  </footer>
+</body>
+</html>
