@@ -1,0 +1,51 @@
+/* GLOBAL CSS RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PAGE SETTINGS */
+
+html {
+    width: 100%;
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* IMAGES */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* BUTTONS AND INPUTS */
+
+button,
+input {
+    font-family: inherit;
+}
+
+/* ACCESSIBILITY */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 2px solid #168bff;
+    outline-offset: 3px;
+}
