@@ -11,10 +11,9 @@ Alpha 2 | ENGR 1340 | Project 2
 | Problem It Solves | Texas Tech students need a place to buy and sell items like textbooks, electronics, and school supplies. TTU Marketplace gives students a way to browse items and create listings for things they want to sell. |
 | Page 1 — Home | Alexis: introduce the marketplace and help students find items to browse. Planned file: `index.html`. |
 | Page 2 — Listing | Diego: show an item's pictures, price, condition, and description. Planned file: `listing.html`. |
-| Page 3 — Create Listing | Alex Long: build the form for an item's title, description, condition, price, and pictures. Planned file: `create-listing.html`. |
+| Page 3 — Create Listing | Alex: build the form for an item's title, description, condition, price, and pictures. Planned file: `create-listing.html`. |
 | Page 4 — Sign In | Nate: build the page where students enter their sign-in information. Planned file: `sign-in.html`. |
 | Page 5 — Checkout and Cart | Victor: show items in the cart and the checkout steps. Planned file: `cart.html`. |
-| Page 6 | Not planned for our five-person team. |
 | Key Interactive Feature 1 | Browse listings and use a category or sort control to narrow the items shown. |
 | Key Interactive Feature 2 | Open a listing to see the item's full details. |
 | Key Interactive Feature 3 | Enter listing details, select a condition, and choose pictures in the Create Listing form. |
@@ -27,7 +26,7 @@ These features describe the project plan. They are not all implemented yet.
 
 | Team member | Assigned page |
 | --- | --- |
-| Alex Long | Create Listing |
+| Alex | Create Listing |
 | Diego | Listing |
 | Alexis | Home |
 | Nate | Sign In |
