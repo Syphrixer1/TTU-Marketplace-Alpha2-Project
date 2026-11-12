@@ -1,18 +1,41 @@
-# TTU Marketplace - Create Listing
+# TTU Marketplace
 
-**Alex Long | Alpha 2 | ENGR 1340**
+Alpha 2 | ENGR 1340 | Project 2
 
-This branch contains my Create Listing page and individual progress report. The main branch is kept separate for the group.
+## Project proposal
 
-## Files
+| Field | Our plan |
+| --- | --- |
+| App Name | TTU Marketplace |
+| App Type | Student marketplace |
+| Problem It Solves | Texas Tech students need a place to buy and sell items like textbooks, electronics, and school supplies. TTU Marketplace gives students a way to browse items and create listings for things they want to sell. |
+| Page 1 — Home | Alexis: introduce the marketplace and help students find items to browse. Planned file: `index.html`. |
+| Page 2 — Listing | Diego: show an item's pictures, price, condition, and description. Planned file: `listing.html`. |
+| Page 3 — Create Listing | Alex: build the form for an item's title, description, condition, price, and pictures. Planned file: `create-listing.html`. |
+| Page 4 — Sign In | Nate: build the page where students enter their sign-in information. Planned file: `sign-in.html`. |
+| Page 5 — Checkout and Cart | Victor: show items in the cart and the checkout steps. Planned file: `cart.html`. |
+| Key Interactive Feature 1 | Browse listings and use a category or sort control to narrow the items shown. |
+| Key Interactive Feature 2 | Open a listing to see the item's full details. |
+| Key Interactive Feature 3 | Enter listing details, select a condition, and choose pictures in the Create Listing form. |
+| Key Interactive Feature 4 | Enter sign-in information and see feedback for missing required fields. |
+| Key Interactive Feature 5 | Add or remove cart items and see the order total before checkout. |
 
-- `create-listing.html` - Create Listing form
-- `css/styles.css` - page styling
-- `images/` - the icons and sample listing pictures used on my page
-- `reports/Alex_Long_Individual_Report.docx` - individual report with screenshot
+These features describe the project plan. They are not all implemented yet.
 
-## What works
+## Team assignments
 
-The form has labeled fields for the title, description, condition, price, and pictures. Required fields are checked before Create shows a preview message. Choosing pictures shows how many files were selected. Cancel clears the form. Listings are not saved or posted yet.
+| Team member | Assigned page |
+| --- | --- |
+| Alex | Create Listing |
+| Diego | Listing |
+| Alexis | Home |
+| Nate | Sign In |
+| Victor | Checkout and Cart |
 
-Open `create-listing.html` in a browser or use Live Server in VS Code. This branch contains only my page; the other navigation buttons are placeholders for the group project.
+## How we organize the project
+
+The team proposal and shared project information belong on `main`. Each person works on their assigned page in a branch named for them, makes descriptive commits as they work, and opens a pull request when their changes are ready to review.
+
+Each page will have its own HTML file with the author's name in a comment at the top. Shared styling goes in `css/styles.css`, and images and icons go in `images/`. The home page uses `index.html`; the other planned filenames are listed in the proposal above. These filenames describe the intended group structure, not files that are all present on `main` yet.
+
+Alex's current work is on `Alex's-Page`. His Create Listing file is currently named `index.html`; renaming it to `create-listing.html` is still pending. The four teammate invitations have been sent. Each teammate still needs to accept their invitation and contribute from their own branch.
