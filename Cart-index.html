@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Review the items in your TTU Marketplace shopping cart.">
+  <title>Shopping Cart | TTU Marketplace</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <a class="site-brand" href="index.html">TTU Marketplace</a>
+    <nav class="primary-navigation" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="listing.html">Buying</a>
+      <a href="create-listing.html">Selling</a>
+      <a href="sign-in.html">Account</a>
+      <a href="Cart-index.html" aria-current="page">Cart</a>
+    </nav>
+  </header>
+
+  <main id="main-content" class="site-main">
+    <section class="cart-section" aria-labelledby="cart-heading">
+      <header class="cart-toolbar">
+        <h1 id="cart-heading">Shopping Cart</h1>
+        <a class="create-listing" href="create-listing.html">Create Listing</a>
+        <form class="search-form" action="index.html" method="get" role="search" aria-label="Search marketplace">
+          <label class="visually-hidden" for="site-search">Search marketplace</label>
+          <input id="site-search" name="q" type="search" placeholder="Search">
+          <button type="submit">Search</button>
+        </form>
+      </header>
+
+      <form class="cart-form" action="checkout.html" method="get" aria-label="Shopping cart">
+        <table class="cart-table">
+          <caption class="visually-hidden">Items in your shopping cart</caption>
+          <thead>
+            <tr>
+              <th scope="col">Item</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="cart-item">
+              <td class="item-cell">
+                <article class="product-card">
+                  <img class="product-image" src="images/math-textbook.svg" alt="Illustration of a math textbook">
+                  <section class="product-details" aria-label="Math Textbook details">
+                    <h2><a href="listing.html">Math Textbook — $60</a></h2>
+                    <p>Textbook that has Calculus 1, 2, and 3.</p>
+                  </section>
+                  <p class="condition">Good</p>
+                </article>
+              </td>
+              <td class="quantity-cell">
+                <label class="visually-hidden" for="item-quantity">Math Textbook quantity</label>
+                <input id="item-quantity" name="quantity" type="number" value="1" min="1" max="99">
+              </td>
+              <td class="price-cell">
+                <output aria-label="Math Textbook price">$60.00</output>
+              </td>
+            </tr>
+            <tr class="cart-placeholder" aria-hidden="true">
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="cart-placeholder" aria-hidden="true">
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="cart-placeholder" aria-hidden="true">
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <nav class="cart-actions" aria-label="Cart actions">
+          <a class="action-button" href="index.html">Continue to Shopping</a>
+          <button class="action-button" type="submit">Continue to Checkout</button>
+        </nav>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>TTU Marketplace · ENGR 1340 Project 2</p>
+  </footer>
+</body>
+</html>
