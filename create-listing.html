@@ -21,7 +21,11 @@
         <label><input type="radio" name="condition" value="Good"><span>Good</span></label>
         <label><input type="radio" name="condition" value="Perfect"><span>Perfect</span></label>
       </div></fieldset>
-      <div class="field price-field"><label for="price">Price</label><input id="price" name="price" type="number" min="0" step="0.01" inputmode="decimal" placeholder="$00.00" required></div>
+      <div class="field price-field">
+        <label for="price">Price</label>
+        <input id="price" name="price" type="number" min="0" step="0.01"
+               inputmode="decimal" placeholder="00.00" aria-label="Price in US dollars" required>
+      </div>
       <div class="field upload-field"><label for="images">Upload Images</label><div class="upload-area"><img class="upload-icon" src="images/upload.svg" alt=""><label class="browse" for="images">Browse Files</label><input id="images" type="file" accept="image/*" multiple><span id="file-status" aria-live="polite"></span></div></div>
       <div class="actions"><button type="submit">Create</button><button type="reset">Cancel</button><a class="back-link" href="#other-listings">Back to Listings</a></div>
       <p id="form-status" role="status"></p>
